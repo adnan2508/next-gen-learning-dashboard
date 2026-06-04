@@ -11,7 +11,7 @@ export default function ActivityTile() {
         border-zinc-800
         bg-zinc-900
         p-6
-        min-h-[260px]
+        min-h-64
       "
     >
       <div className="flex justify-between items-center">
@@ -31,7 +31,7 @@ export default function ActivityTile() {
             className="
               flex-1
               rounded-full
-              bg-gradient-to-t
+              bg-linear-to-t
               from-indigo-500
               to-cyan-400
             "
