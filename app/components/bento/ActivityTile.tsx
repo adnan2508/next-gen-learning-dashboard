@@ -5,14 +5,7 @@ export default function ActivityTile() {
 
   return (
     <article
-      className="
-        rounded-3xl
-        border
-        border-zinc-800
-        bg-zinc-900
-        p-6
-        min-h-64
-      "
+      className="rounded-3xl border border-zinc-800 bg-zinc-900 p-6 min-h-64"
     >
       <div className="flex justify-between items-center">
         <h2 className="font-semibold text-lg">
