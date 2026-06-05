@@ -1,5 +1,7 @@
 # Next Gen Learning Dashboard
 
+Live Site: https://next-gen-learning-dashboard-two-ashy.vercel.app/
+
 A high-performance, beautifully animated learning dashboard built with Next.js 16, React 19, and Framer Motion. This project demonstrates modern web architecture patterns for optimal performance and user experience.
 
 ## Architecture Overview
