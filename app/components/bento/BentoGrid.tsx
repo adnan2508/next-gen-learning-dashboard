@@ -1,7 +1,12 @@
 import HeroTile from "./HeroTile";
 import ActivityTile from "./ActivityTile";
+import CourseTile from "./CourseTile";
 
-export default function BentoGrid() {
+import { getCourses } from "@/app/lib/supabase/getCourses";
+
+export default async function BentoGrid() {
+  const courses = await getCourses();
+
   return (
     <section
       aria-label="Dashboard content"
@@ -18,17 +23,12 @@ export default function BentoGrid() {
 
       {/* Dynamic Course Cards will go here */}
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-        <article className="h-52 rounded-3xl bg-zinc-900 border border-zinc-800">
-          Course Card
-        </article>
-
-        <article className="h-52 rounded-3xl bg-zinc-900 border border-zinc-800">
-          Course Card
-        </article>
-
-        <article className="h-52 rounded-3xl bg-zinc-900 border border-zinc-800">
-          Course Card
-        </article>
+        {courses.map((course) => (
+          <CourseTile
+            key={course.id}
+            course={course}
+          />
+        ))}
       </div>
     </section>
   );

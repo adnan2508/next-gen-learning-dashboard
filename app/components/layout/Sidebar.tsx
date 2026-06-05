@@ -123,11 +123,7 @@ export default function Sidebar() {
 
       {/* Mobile Bottom Navigation */}
       <nav
-        className="
-          sm:hidden fixed bottom-0 left-0 right-0
-          border-t border-zinc-800 bg-black
-          flex justify-around py-2
-        "
+        className="sm:hidden fixed bottom-0 left-0 right-0 border-t border-zinc-800 bg-black flex justify-around py-2 z-30"
       >
         {navItems.map((item) => {
           const Icon = item.icon;
