@@ -1,9 +1,12 @@
+import AnimatedCard from "../ui/AnimatedCard";
+
 export default function ActivityTile() {
   const activityData = [
     20, 40, 15, 70, 50, 80, 35,
   ];
 
   return (
+    <AnimatedCard>
     <article
       className="rounded-3xl border border-zinc-800 bg-zinc-900 p-6 min-h-64"
     >
@@ -35,5 +38,6 @@ export default function ActivityTile() {
         ))}
       </div>
     </article>
+    </AnimatedCard>
   );
 }

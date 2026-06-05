@@ -1,5 +1,8 @@
+import AnimatedCard from "../ui/AnimatedCard";
+
 export default function HeroTile() {
   return (
+    <AnimatedCard>
     <article
       className="
         relative
@@ -59,5 +62,6 @@ export default function HeroTile() {
         </div>
       </div>
     </article>
+    </AnimatedCard>
   );
 }
