@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next gen learning Dashboard",
+  title: "Next Gen Learning Dashboard",
   description: "Dashboard",
 };
 

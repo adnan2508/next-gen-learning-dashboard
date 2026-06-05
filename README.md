@@ -33,15 +33,15 @@ A high-performance, beautifully animated learning dashboard built with Next.js 1
   - Uses `y` transforms for vertical movement (translateY)
   - Uses `scale` transforms for size changes
   - Avoids animating `width`, `height`, `padding`, `margin` on layout-dependent elements
-- **Result**: 60 FPS animations with zero Cumulative Layout Shift (CLS) impact
+- **Result**:   Attractive animations with impact
 
 ## Tech Stack
 
-- **Next.js 16.2.7**: Latest React framework with App Router
-- **React 19.2.4**: Latest React with improvements to concurrent features
-- **Framer Motion 12.40.0**: Production-ready animation library
-- **Tailwind CSS 4**: Utility-first styling
-- **TypeScript 5**: Type-safe development
+- **Next.js 16**: Latest React framework with App Router
+- **React**: Latest React with improvements to concurrent features
+- **Framer Motion**: Production-ready animation library
+- **Tailwind CSS**: Utility-first styling
+- **TypeScript**: Type-safe development
 - **Supabase**: Backend-as-a-service for data management
 - **Lucide React**: Icon library
 
@@ -81,12 +81,3 @@ app/
 └── types/
     └── course.ts               # Course data type definitions
 ```
-
-## Performance Metrics
-
-This architecture achieves:
-- ✅ Zero client-side fetch waterfalls
-- ✅ Smooth 60 FPS animations
-- ✅ Zero Cumulative Layout Shift (CLS)
-- ✅ Optimal Core Web Vitals
-- ✅ Instant loading feedback with skeleton states
