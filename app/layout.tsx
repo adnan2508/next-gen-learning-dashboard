@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body>
+      <body suppressHydrationWarning>
         {children}
       </body>
     </html>
